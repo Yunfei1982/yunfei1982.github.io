@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Seven
+title: SEVEN
 email: yunfei.1982@gmail.com
-description: > # Seven's Homepage.
+description: 记录生活、工作、学习的点点滴滴
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yunfei1982.github.io" # the base hostname & protocol for your site
-twitter_username: Yunfei1982
+twitter_username: 
 github_username:  Yunfei1982
 
 # Build settings

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About Me
+title: 关于我
 permalink: /about/
 ---
 
-{% include icon-github.html username="Yunfei1982" %}
+>他很懒，什么都没有留下。。。
