@@ -16,3 +16,7 @@ github_username:  Yunfei1982
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+paginate: 3
+
+gems: [jekyll-paginate]
