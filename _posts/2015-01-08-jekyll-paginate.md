@@ -1,24 +1,32 @@
 ---
-layout: default
+layout: post
+title:  "jekyll-paginate 的使用"
+date:   2016-01-08 21:11:00 +0800
+categories: Jekyll
 ---
 
-<div class="home">
-  <!--<h1 class="page-heading">Posts</h1>-->
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</span>
+配置 _config.yml
+{% highlight yaml %}
+gems: [jekyll-paginate, jekyll-gist]
+{% endhighlight %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  <p class="rss-subscribe">订阅 <a href="{{ "/feed.xml" | prepend: site.baseurl }}"> RSS</a></p>
-</div>
+找到 index.html 中的
+{% highlight html %}
+{% raw %}
+{% for post in site.posts %}
+{% endraw %}
+{% endhighlight %}
 
-<!-- Pagination links -->
+修改为：
+{% highlight html %}
+{% raw %}
+{% for post in paginator.posts %}
+{% endraw %}
+{% endhighlight %}
+
+加入分页连接
+{% highlight html %}
+{% raw %}
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -44,3 +52,18 @@ layout: default
   {% endif %}
 </div>
 {% endif %}
+{% endraw %}
+{% endhighlight %}
+
+在 post.html 底部加入上一篇、下一篇的连接
+{% highlight html %}
+{% raw %}
+{% if page.previous %}
+    上一篇：<a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a><br>
+{% endif %}
+
+{% if page.next %}
+    下一篇：<a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a>
+{% endif %}
+{% endraw %}
+{% endhighlight %}

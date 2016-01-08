@@ -15,8 +15,11 @@ twitter_username:
 github_username:  Yunfei1982
 
 # Build settings
-markdown: kramdown
-highlighter: pygments
-paginate: 3
+markdown: Kramdown
+paginate: 30
+paginate_path: "/blog/page:num/"
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-gist]
