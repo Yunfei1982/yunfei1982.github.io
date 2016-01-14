@@ -2,7 +2,7 @@
 layout: post
 title:  "爱是什么"
 date:   2016-01-13 23:14:00 +0800
-categories: 随笔
+categories: 语录
 ---
 
 ### 爱的最终是陪伴，是不离不弃。。。
