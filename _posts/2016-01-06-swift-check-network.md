@@ -38,4 +38,4 @@ else{
 }
 {% endhighlight %}
 
-PS：适用于 Swift 版本 2.0
+> PS：适用于 Swift 版本 2.0
