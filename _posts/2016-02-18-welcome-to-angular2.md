@@ -11,9 +11,9 @@ categories: Angular
 
 经过伟大的 Google 还是找到了一些
 
-把其中一些不错的，分享给同样 English 的同学
+把其中一些不错的，分享给同样 English 不好的同学
 
-English 好的直接看 [官方文档](https://angular.io/docs/ts/latest/quickstart.html) 就好了
+English 好的请直接看 [官方文档](https://angular.io/docs/ts/latest/quickstart.html) 就好了
 
 [Angular2 问答列表](https://github.com/kittencup/angular2-ama-cn)
 [Angular2 系列教程](http://www.cnblogs.com/lewis617/tag/angular2/)
